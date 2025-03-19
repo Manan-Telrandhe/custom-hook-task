@@ -1,0 +1,97 @@
+$primary-color: rgb(24, 90, 204);
+$secondary-color: rgb(59, 180, 59);
+$end-color: rgb(182, 32, 32);
+
+body{
+    background-color: black;
+}
+
+.container{
+    text-align: center;
+    margin-top: 20%;
+    justify-content: center;
+    padding: 20px;
+
+
+h2{
+    color: white;
+}
+
+.count{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin: 10px 0;
+}
+
+.buttons{
+    button{
+        margin: 5px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+    
+        &.inc{
+            background-color: $primary-color;
+            color: white;
+        }
+
+        &.dec{
+            background-color: $secondary-color;
+            color: white;
+        }
+
+        &.reset{
+            background-color: $end-color;
+            color: white;
+        }
+
+        &.hover{
+            opacity: 0.8;
+        }
+    }
+}
+
+.incbyval {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+
+    .inp {
+        width: 100px;
+        padding: 8px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid $primary-color;
+        margin-right: 10px;
+        background-color: #333;
+        color: white;
+        outline: none;
+
+        &:focus {
+            border-color: $secondary-color;
+        }
+    }
+
+    .btn {
+        padding: 10px 20px;
+        background-color: $primary-color;
+        color: white;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        border: none;
+
+        &:hover {
+            background-color: $secondary-color;
+        }
+    }
+}
+
+}
+
